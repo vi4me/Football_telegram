@@ -1,1 +1,1 @@
-bot: sports.rb
+bot: ruby sports.rb
