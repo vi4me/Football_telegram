@@ -5,7 +5,7 @@ require 'byebug'
 require 'telegram/bot'
 require 'json'
 
-def scraper
+
 
 	token = '914704234:AAHLIJIQ2KTImvFz9DuWJEUMY0DfpomBFus'
  	url = 'https://www.sports.ru/football/?from=menu&e=main'
@@ -44,9 +44,8 @@ def scraper
   		end
 	end
   		
-end
 
-scraper
+
   
  
   
