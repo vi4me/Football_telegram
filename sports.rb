@@ -94,7 +94,7 @@ Telegram::Bot::Client.run(token) do |bot|
             when 'test'
                 bot.api.send_message(chat_id: message.from.id, text: "Hello, #{message.from.first_name} \n Здесь находятся ежедневные результаты матчей по футболу\n#{foots.to_s.tr('"tn[','').tr('\\','').tr(",]","\n\n")}")
             when 'touch'
-                bot.api.send_message(chat_id: message.from.id, text: "Hello, #{message.from.first_name} \n Здесь находятся ежедневные результаты матчей по баскутболу\n#{baskets.to_s.tr('"tn[','').tr('\\','').tr(",]","\n\n")}")
+                bot.api.send_message(chat_id: message.from.id, text: "Hello, #{message.from.first_name} \n Здесь находятся ежедневные результаты матчей по баскетболу\n#{baskets.to_s.tr('"tn[','').tr('\\','').tr(",]","\n\n")}")
         	when 'news'
                 bot.api.send_message(chat_id: message.from.id, text: "Hello, #{message.from.first_name} \n Здесь находятся ежедневные спортивные новости\n#{sports.to_s.tr('=>"',' ').tr("],}{[","\n")}")
             end
